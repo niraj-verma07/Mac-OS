@@ -1,0 +1,49 @@
+import React from "react";
+import gitData from "../../assets/github.json";
+import MacWindow from "./MacWindow";
+import "./github.scss";
+
+const GitCard = ({
+  data = {
+    id: 1,
+    image: "",
+    title: "",
+    description: "",
+    tags: [],
+    repoLink: "",
+    demoLink: "",
+  },
+}) => {
+  return (
+    <div className="card">
+      <img src={data.image} alt="" />
+      <h1>{data.title}</h1>
+      <p className="description">{data.description}</p>
+      <div className="tags">
+        {data.tags.map((tag) => {
+          return <p className="tag">{tag}</p>;
+        })}
+      </div>
+      <div className="urls">
+        <a href={data.repoLink}>Repository</a>
+        {data.demoLink && <a className="liveLink" href={data.demoLink}>Live Demo</a>}
+      </div>
+    </div>
+  );
+};
+
+const Github = () => {
+  return (
+    <div>
+      <MacWindow>
+        <div className="cards">
+          {gitData.map((project) => {
+            return <GitCard data={project} />;
+          })}
+        </div>
+      </MacWindow>
+    </div>
+  );
+};
+
+export default Github;
