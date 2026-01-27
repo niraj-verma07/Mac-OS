@@ -17,6 +17,8 @@ main {
     background-image: url("/wallpaper.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 
 body {

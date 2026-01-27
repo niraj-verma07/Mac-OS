@@ -1,0 +1,36 @@
+/**
+ * @file: profile.config.js
+ * @author: Engineering Portfolio
+ * @summary: A high-performance full-stack engineer.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "React.js",    // 100%
+    "Next.js",     // 95%
+    "TailwindCSS", // 90%
+  ],
+  backend: [
+    "Node.js",     // 90%
+    "MongoDB",  // 85%
+    
+  ],
+  tools: ["AWS", "Git", "Linux"]
+};
+
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// 2. ACADEMIC BACKGROUND
+// --------------------------------------------------
+
+const education = new Map([
+  ["Jharkhand University Of Technology", "Bachaler's in Computer Aplication (7.9 GPA)"]
+]);
+
+module.exports = new ProfessionalHistory();
