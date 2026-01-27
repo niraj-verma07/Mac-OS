@@ -29,6 +29,7 @@
 
             .red {
                 background-color: #eb3535;
+                cursor: default;
             }
 
             .yellow {
@@ -45,8 +46,7 @@
         height: 100%;
     }
 
-    *::--webkit-scrollbar-thumb {
-        background-color: rgba(168, 168, 168, 0.4);
-        border-radius: 4px;
+    *::-webkit-scrollbar {
+        width: 8px;
     }
 }
