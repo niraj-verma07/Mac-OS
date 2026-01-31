@@ -14,37 +14,32 @@ const Cli = ({ windowName, setWindowsState }) => {
     skills: {
       description: "List technical skills",
       usage: "skills",
-      fn: () => `Frontend: React, Next.js, Vanilla JS, Sass, HTML/CSS
+      fn: () => `Frontend: React, Vanilla JS, Sass, HTML/CSS
 Backend: Node.js, Express
-Databases: MongoDB,MySQL
-Tools: Git, Vite`,
+Databases: MongoDB,
+Tools: Git, Vite, Render, Vercel, Render`,
     },
     projects: {
       description: "View my projects",
       usage: "projects",
       fn: () => `1. Portfolio Website - React + Vite
-2. E-commerce Platform - MERN Stack
-3. Task Management App - Next.js
-4. Real-time Chat App - Socket.io
-5. Data Dashboard - React + Chart.js`,
+2. Docs App - React + Vite, Framer Motion
+3. Employee Management App - React.js
+4. ZenTask Productivity Dashboard - JavaScript, CSS
+5. 30+ Projects - HTML,CSS, Scss, JavaScript, React`,
     },
     experience: {
-      description: "Display work experience",
+      description: "Freelance Frontend Developer",
       usage: "experience",
-      fn: () => `Senior Developer @ Tech Corp (2022 - Present)
-  - Led development of 5+ React applications
-  - Mentored junior developers
-
-Full Stack Developer @ Web Solutions (2020 - 2022)
-  - Built scalable APIs with Node.js
-  - Designed responsive UIs with React`,
+      fn: () => `Freelance (Dec 2024 - April 2025)
+  - Led development of 2+ applications`,
     },
     contact: {
       description: "Get contact information",
       usage: "contact",
-      fn: () => `Email: niraj@example.com
-Phone: +1 (555) 123-4567
-Location: San Francisco, CA`,
+      fn: () => `Email: vermaniraj9607@gmail.com
+Phone: +91 99XXXXXX07
+Location: Jharkhand, India`,
     },
     github: {
       description: "Open GitHub profile",
@@ -62,7 +57,7 @@ Location: San Francisco, CA`,
     social: {
       description: "View social media links",
       usage: "social",
-      fn: () => `Twitter: @ankurdev
+      fn: () => `Twitter: @devniraj07
 LinkedIn: /in/niraj-vermaa
 Portfolio: devniraj.netlify.app`,
     },

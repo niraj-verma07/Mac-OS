@@ -1,32 +1,39 @@
-/**
- * @file: profile.config.js
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
- */
+// --------------------------------------------------
+// 1. INTRO
+// --------------------------------------------------
+
+const intro = {
+
+  Hi, I am Niraj Kumar Verma, a final-year BCA student
+  passionate about full-stack development and continuously
+   improving my skills through hands-on projects.
+
+}
 
 // --------------------------------------------------
-// 1. CORE DEPENDENCIES & SKILLS
+// 2. CORE DEPENDENCIES & SKILLS
 // --------------------------------------------------
+
+
 
 const TECH_STACK = {
   frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
+    "React.js",    // 80%
+    "JavaScript",     // 95%
+    "TailwindCSS", // 80%
+    "Bootstrap", // 80%
   ],
   backend: [
-    "Node.js",     // 90%
-    "MongoDB",  // 85%
+    "Node.js",     // 50%
+    "MongoDB",  // 50%
     
   ],
-  tools: ["AWS", "Git", "Linux"]
+  tools: ["AWS", "Git", "Vercel", "Render", "Netlify]
 };
 
-// --------------------------------------------------
-
 
 // --------------------------------------------------
-// 2. ACADEMIC BACKGROUND
+// 3. ACADEMIC BACKGROUND
 // --------------------------------------------------
 
 const education = new Map([

@@ -6,6 +6,7 @@ import Github from "./components/windows/Github";
 import Note from "./components/windows/Note";
 import Resume from "./components/windows/Resume";
 import Spotify from "./components/windows/Spotify";
+import Mail from "./components/windows/Mail";
 import Cli from "./components/windows/Cli";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     note: false,
     resume: false,
     spotify: false,
+    mail: false,
     cli: false,
   });
 
@@ -32,6 +34,9 @@ function App() {
       )}
       {windowsState.spotify && (
         <Spotify windowName="spotify" setWindowsState={setWindowsState} />
+      )}
+      {windowsState.mail && (
+        <Mail windowName="mail" setWindowsState={setWindowsState} />
       )}
       {windowsState.cli && (
         <Cli windowName="cli" setWindowsState={setWindowsState} />

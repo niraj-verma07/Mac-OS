@@ -17,10 +17,14 @@ const Nav = () => {
           <p>File</p>
         </div>
         <div className="nav-item">
-          <p>Window</p>
+          <a href="https://x.com/devniraj07" target="blank">
+            Twitter
+          </a>
         </div>
         <div className="nav-item">
-          <p>Terminal</p>
+          <a href="https://github.com/niraj-verma07" target="blank">
+            Github
+          </a>
         </div>
       </div>
       <div className="right">

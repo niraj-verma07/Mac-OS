@@ -1,19 +1,8 @@
-import React from "react";
-import gitData from "../../assets/github.json";
+import React, { useEffect, useState } from "react";
 import MacWindow from "./MacWindow";
 import "./github.scss";
 
-const GitCard = ({
-  data = {
-    id: 1,
-    image: "",
-    title: "",
-    description: "",
-    tags: [],
-    repoLink: "",
-    demoLink: "",
-  },
-}) => {
+const GitCard = () => {
   return (
     <div className="card">
       <img src={data.image} alt="" />
@@ -37,12 +26,39 @@ const GitCard = ({
 };
 
 const Github = ({ windowName, setWindowsState }) => {
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/niraj-verma07/repos")
+      .then((res) => res.json())
+      .then((data) => {
+        setRepos(data);
+        // console.log(data);
+      });
+  }, []);
   return (
     <MacWindow windowName={windowName} setWindowsState={setWindowsState}>
-      <div className="cards">
-        {gitData.map((project) => {
-          return <GitCard data={project} />;
-        })}
+      <div className="github-section">
+        <h2>My GitHub Projects</h2>
+
+        {repos.map((repo) => (
+          <div key={repo.id} className="repo-card">
+            <h3>{repo.name}</h3>
+
+            <p className="description">
+              {repo.description || "No description available"}
+            </p>
+
+            <div className="meta">
+              <span>⭐ {repo.stargazers_count}</span>
+              <span>{repo.language || "N/A"}</span>
+            </div>
+
+            <div className="repo-url">
+              <a href={repo.html_url}>Live</a>
+            </div>
+          </div>
+        ))}
       </div>
     </MacWindow>
   );

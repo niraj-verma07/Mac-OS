@@ -46,7 +46,7 @@ const Dock = ({ windowsState, setWindowsState }) => {
       </div>
       <div
         onClick={() => {
-          window.open("mailto:vermaniraj9607@gmail.com", "_blank");
+          setWindowsState((state) => ({ ...state, mail: true }));
         }}
         className="icon mail"
       >
